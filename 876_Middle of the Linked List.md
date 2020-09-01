@@ -33,7 +33,7 @@ class Solution:
 ## Answer**
 - TAKEAWAY: 
 	- a = b = c in Python means a = c; b = c
-	- Faster than mine.(1.5n vs 0.5n) The thinking is interesting also.
+	- Faster than mine.(1.5n vs 0.5n) The thinking is interesting also. (two-pointer method)
 ```Python
 class Solution(object):
     def middleNode(self, head):
