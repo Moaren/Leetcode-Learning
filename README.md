@@ -10,3 +10,13 @@
 - [237_Delete Node in a Linked List](237_Delete Node in a Linked List.md)
 - [876_Middle of the Linked List](876_Middle of the Linked List.md)
 - [1290_Convert Binary Number in a Linked List to Integer](1290_Convert Binary Number in a Linked List to Integer.md)
+
+### Bit Manipulation
+- [136_Single_Number](136_Single_Number.md)
+
+
+### Hash
+- [136_Single_Number](136_Single_Number.md)
+
+### Binary Tree
+- [654_Maximum_Binary_Tree](654_Maximum_Binary_Tree.md)

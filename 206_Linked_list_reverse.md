@@ -23,7 +23,33 @@ class Solution:
         return prev
 ```
 
+### Attempt 2
+- 基本思路是一样的，只不过这种是以after为中心
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def reverseList(self, head: ListNode) -> ListNode:
+        if head == None or head.next == None:return head        
+        cur = head
+        after = head.next
+        while after.next != None:
+            temp = after.next
+            after.next = cur
+            cur = after
+            after = temp
+        after.next = cur
+        head.next = None
+        return after
+```
+
+
+
 ## Recursive Solution
+### Recursion 1:
 ```Python
 # Definition for singly-linked list.
 # class ListNode:
@@ -45,3 +71,23 @@ class Solution:
         cur = temp
         return self.reverse(cur,prev)
 ```
+
+### Recursion 2:
+- Because **head.next = None** happens before the **after.next = head** and this method iterate one by one. So it doesn't matter here for each step.
+```Python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def reverseList(self, head: ListNode) -> ListNode:
+        # first for boundary check; second for end condition
+        if head == None or head.next == None:return head
+        recursive_node = self.reverseList(head.next)
+        after = head.next
+        after.next = head
+        head.next = None
+        return recursive_node
+```
+
