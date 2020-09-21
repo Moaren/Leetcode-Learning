@@ -13,6 +13,9 @@
 
 ### Bit Manipulation
 - [136_Single_Number](136_Single_Number.md)
+- [1461_Check_If_a_String_Contains_All_Binary_Codes_of_Size_K](1461_Check_If_a_String_Contains_All_Binary_Codes_of_Size_K.md)
+- [1525_Number_of_Good_Ways_to_Split_a_String](1525_Number_of_Good_Ways_to_Split_a_String.md)
+- [136_Single_Number](136_Single_Number.md)
 
 
 ### Hash
@@ -20,3 +23,7 @@
 
 ### Binary Tree
 - [654_Maximum_Binary_Tree](654_Maximum_Binary_Tree.md)
+
+### String
+- [1461_Check_If_a_String_Contains_All_Binary_Codes_of_Size_K](1461_Check_If_a_String_Contains_All_Binary_Codes_of_Size_K.md)
+- [1525_Number_of_Good_Ways_to_Split_a_String](1525_Number_of_Good_Ways_to_Split_a_String.md)
