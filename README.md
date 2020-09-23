@@ -11,11 +11,16 @@
 - [876_Middle of the Linked List](876_Middle of the Linked List.md)
 - [1290_Convert Binary Number in a Linked List to Integer](1290_Convert Binary Number in a Linked List to Integer.md)
 
+### Dynamic Programming
+- [1371_Find_the_Longest_Substring_Containing_Vowels_in_Even_Counts]("1371_Find_the_Longest_Substring_Containing_Vowels_in_Even_Counts.md")
+
 ### Bit Manipulation
 - [136_Single_Number](136_Single_Number.md)
 - [1461_Check_If_a_String_Contains_All_Binary_Codes_of_Size_K](1461_Check_If_a_String_Contains_All_Binary_Codes_of_Size_K.md)
 - [1525_Number_of_Good_Ways_to_Split_a_String](1525_Number_of_Good_Ways_to_Split_a_String.md)
 - [136_Single_Number](136_Single_Number.md)
+- - [1371_Find_the_Longest_Substring_Containing_Vowels_in_Even_Counts]("1371_Find_the_Longest_Substring_Containing_Vowels_in_Even_Counts.md")
+
 
 
 ### Hash
@@ -23,7 +28,14 @@
 
 ### Binary Tree
 - [654_Maximum_Binary_Tree](654_Maximum_Binary_Tree.md)
+- [199_Binary_Tree_Right_Side_View](199_Binary_Tree_Right_Side_View.md)
 
 ### String
 - [1461_Check_If_a_String_Contains_All_Binary_Codes_of_Size_K](1461_Check_If_a_String_Contains_All_Binary_Codes_of_Size_K.md)
 - [1525_Number_of_Good_Ways_to_Split_a_String](1525_Number_of_Good_Ways_to_Split_a_String.md)
+
+### Queue
+- [199_Binary_Tree_Right_Side_View](199_Binary_Tree_Right_Side_View.md)
+
+### Stack
+- [199_Binary_Tree_Right_Side_View](199_Binary_Tree_Right_Side_View.md)
