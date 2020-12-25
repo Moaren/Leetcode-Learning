@@ -1,0 +1,44 @@
+heap
+1. 已知parent node index  i, left child index = 2*i + 1, right_child_index = 2*i+2，可以通过一个具体的例子记忆（0,1,2）
+2. 已知child node index j, parent_index = (j - 1)/2 （不能整除取lower floor）
+3. heap sort的基本流程
+build_max_heap;
+将heap首位与末尾换位，heap_size -= 1;
+对首位做maxheapify，因为maxheapify的特点是从上往下传导，这一轮之后新的heap就是完整的heap
+4. build_max_heap的基本思路：
+比较node与其两个child的值，值最大的做parent
+因为上一步涉及到一个本身不大的假parent与其中一个child的交换，还需要继续到原来那个child/现在的加parent所在的位置做heapify
+build_max_heap的思路就是从倒数第二层(index = heap_size/2)开始heapify 一直heapify到首位，这样得到的heap tree必定是完全的
+
+
+- 关于值传递和引用传递：所有function中进行的变化实质上都是值传递，如果传入的是class类，在function中对于原始变量的重新赋值并不影响外在变量，但对于指针指向class的修改会直接影响到外在
+- 栈空间使用与否看的应该是该function下是否额外创建了新数组（输入数据不看做空间复杂度的组成部分）
+- 找第k个极值的问题都适合用heap解决
+
+
+merge sort
+基本思路：
+1. 基本结构-function(nums, left_Index, right_index)，递归停止条件-left == right, 递归出现位置 - 开始，合并出现位置 - 结束
+2. 理解难点：递归顺序 - 分到以每个独立的数字为基本单位，从最右与右二开始，以此类推。同一层对应的两个操作必定是平级的。
+3. 特点：本身就是围绕数值出现的先后顺序进行的递归操作，涉及index存在的有天然优势；再有每一层分好类后都是一个有序数组
+
+recursion_function(nums, 0, length - 1)
+recursion_function{
+if left == right: return 0;
+mid = left + right // 2
+recursion_function(nums, left, mid)
+recursion_function(nums, mid+1, right)
+//合并操作
+sorted = []
+p1 = left, p2 = mid + 1, p = 0
+while(p1 <= mid || p2 <= right){
+//比较大小并且依次填入sorted
+//注意三个指针的更新顺序
+//考虑一个先到头的情况}
+
+//将sorted同步加入nums
+return ；
+
+4. 个人认为容易出错的点：边界要不要取
+
+
